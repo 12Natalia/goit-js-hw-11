@@ -100,6 +100,7 @@ function insertMarkup(objectsArray) {
 
 function notification(length, totalHits) {
   if (length === 0) {
+    btnLoadMore.style.display = 'none';
     Notiflix.Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
     );
